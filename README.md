@@ -45,3 +45,33 @@ git rebase --abort
 完成后再次运行 `sync.bat` 或 `./sync.ps1`。
 
 提示：本仓库是从 `origin` 克隆而来（`git remote -v` 可查看），默认具备推送权限即可正常使用。
+
+## GitHub Pages 展示 PDFs 目录与清单
+
+已在 `docs/` 目录下添加静态站点：
+
+- `docs/index.html`：自动列出 `PDFs/` 下的子文件夹。
+- `docs/folder.html`：根据子文件夹内的 `meta.json` 渲染论文清单表格。
+- `docs/assets/*.js|*.css`：样式与脚本。
+
+数据放置方式：
+
+- 在仓库根目录创建 `PDFs/` 目录。
+- 每个子文件夹（例如 `PDFs/LLM/`）内，放置 `meta.json` 与实际 PDF 文件。
+- `meta.json` 为一个数组，条目示例见 `PDFs/sample/meta.json`，字段包括：
+  - `title`：论文题名
+  - `filename` 或 `pdf`：同目录下 PDF 文件名或绝对链接
+  - `year`：年份
+  - `venue`（或 `journal`/`conference`）：期刊或会议
+  - `authors`：作者数组
+  - `affiliations`（或 `orgs`/`companies`）：单位/公司数组
+  - `github_repo`：对应 GitHub 仓库地址（用于获取 Star 数）
+
+启用 GitHub Pages：
+
+1. 打开仓库 Settings → Pages。
+2. Source 选择 `Deploy from a branch`。
+3. Branch 选择 `main`，目录选择 `/docs`，保存。
+4. 稍等片刻，访问仓库 Pages 地址（通常为 `https://<用户名>.github.io/YRL-s-Library/`）。
+
+注意：页面脚本默认使用配置 `owner=yangruoliu`、`repo=YRL-s-Library`、`branch=main` 读取内容；如改名或使用 Fork，可编辑 `docs/index.html` 与 `docs/folder.html` 顶部的 `window.SITE_CONFIG`。

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YRL's Library - 目录</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="YRL's Library PDFs 子文件夹目录">
+</head>
+<body>
+  <header class="site-header">
+    <h1>YRL's Library</h1>
+    <p>PDFs 子文件夹目录</p>
+  </header>
+  <main class="container">
+    <div id="message" class="message">正在加载目录…</div>
+    <div id="folders" class="card-list" aria-live="polite"></div>
+  </main>
+  <footer class="site-footer">
+    <p>本页自动读取仓库的 <code>PDFs</code> 目录。</p>
+  </footer>
+  <script>
+    window.SITE_CONFIG = { owner: "yangruoliu", repo: "YRL-s-Library", branch: "main" };
+  </script>
+  <script src="./assets/index.js"></script>
+</body>
+</html>
+
