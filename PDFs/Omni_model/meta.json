@@ -1,5 +1,43 @@
 [
   {
+    "title": "Thyme: Think Beyond Images",
+    "filename": "Thyme-Think_Beyond_Images.pdf",
+    "year": 2025.8,
+    "affiliations": ["Kwai Keye"],
+    "github_repo": "https://github.com/yfzhang114/Thyme"
+  },
+  {
+    "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility, Reasoning, and Efficiency",
+    "filename": "2508.18265v2.pdf",
+    "year": 2025.8,
+    "affiliations": ["InternVL Team, Shanghai AI Laboratory"],
+    "github_repo": "https://github.com/OpenGVLab/InternVL",
+    "arxiv": "https://arxiv.org/abs/2508.18265"
+  },
+  {
+    "title": "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
+    "filename": "GLM-4.5v_and_GLM-4,1v-thinking.pdf",
+    "year": 2025.7,
+    "affiliations": ["Zhipu AI","Tsinghua University"],
+    "github_repo": "https://github.com/zai-org/ GLM-V"
+  },
+  {
+    "title": "MiMo-VL Technical Report",
+    "filename": "2506.03569v1.pdf",
+    "year": 2025.6,
+    "affiliations": ["LLM-Core Xiaomi"],
+    "github_repo": "https://github.com/XiaomiMiMo/MiMo-VL",
+    "arxiv": "https://arxiv.org/abs/2506.03569"
+  },
+  {
+    "title": "Show-o2: Improved Native Unified Multimodal Models",
+    "filename": "2506.15564v2.pdf",
+    "year": 2025.6,
+    "affiliations": ["Show Lab, NUS"],
+    "github_repo": "https://github.com/showlab/Show-o",
+    "arxiv": "https://arxiv.org/abs/2506.15564"
+  },
+  {
     "title": "MMSearch-R1: Incentivizing LMMs to Search",
     "filename": "2506.20670v1.pdf",
     "year": 2025.6,
