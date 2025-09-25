@@ -1,7 +1,6 @@
 # YRL-s-Library
 远程托管最近读的论文：）
 最好是能监督我好好读论文！！
-在线预览：https://yangruoliu.github.io/YRL-s-Library/
 
 > 在线预览（GitHub Pages）：[https://yangruoliu.github.io/YRL-s-Library/](https://yangruoliu.github.io/YRL-s-Library/)
 > 需要在仓库 Settings → Pages 启用：Source 选 Deploy from a branch，Branch 选 main，Folder 选 /docs。

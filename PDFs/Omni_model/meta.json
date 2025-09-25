@@ -3,9 +3,9 @@
     "title": "InternVL2.5--Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
     "filename": "2412.05271v4.pdf",
     "year": 2024,
-    "venue": "arXiv 2412.05271",
     "affiliations": ["Shanghai AI Laboratory"],
-    "github_repo": "https://github.com/OpenGVLab/InternVL"
+    "github_repo": "https://github.com/OpenGVLab/InternVL",
+    "arxiv": "https://arxiv.org/abs/2412.05271"
   }
 ]
 

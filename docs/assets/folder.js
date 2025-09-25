@@ -58,12 +58,15 @@
       const tr = document.createElement('tr');
       const pdfHref = it.pdf || it.file || it.filename;
       const pdfUrl = pdfHref ? toFileUrl(pdfHref) : '';
+      const ghUrl = it.github_repo || it.github || '';
+      const arxivUrl = it.arxiv || it.arxiv_url || '';
       tr.innerHTML = `
         <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
         <td>${escapeHtml(it.year)}</td>
         <td>${escapeHtml(it.venue || it.journal || it.conference)}</td>
         <td>${results[idx] || ''}</td>
-        <td>${joinTags(it.authors)}</td>
+        <td>${ghUrl ? `<a href="${escapeAttr(ghUrl)}" target="_blank" rel="noopener">GitHub</a>` : ''}</td>
+        <td>${arxivUrl ? `<a href="${escapeAttr(arxivUrl)}" target="_blank" rel="noopener">arXiv</a>` : ''}</td>
         <td>${joinTags(it.affiliations || it.orgs || it.companies)}</td>
       `;
       frag.appendChild(tr);
@@ -82,6 +85,7 @@
     return `https://github.com/${owner}/${repo}/blob/${encodeURIComponent(branch)}/PDFs/${encodeURIComponent(name)}/${encodeURIComponent(href)}`;
   }
   function escapeHtml(v){ if(v===0) return '0'; if(!v && v!==0) return ''; return String(v).replace(/[&<>"']/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[s])); }
+  function escapeAttr(v){ return escapeHtml(v).replace(/"/g,'&quot;'); }
   function linkOrText(text, href){ if(!href) return escapeHtml(text||''); return `<a href="${href}" target="_blank" rel="noopener">${escapeHtml(text||href)}</a>`; }
   function joinTags(list){
     if(!list) return '';
