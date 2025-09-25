@@ -14,7 +14,7 @@
 
 ### 快速使用
 
-- 方式一（推荐）：在资源管理器中双击 `sync.bat`。
+- 方式一：在资源管理器中双击 `sync.bat`。
 - 方式二（PowerShell）：
 
 ```powershell
@@ -49,6 +49,26 @@ git rebase --abort
 
 提示：本仓库是从 `origin` 克隆而来（`git remote -v` 可查看），默认具备推送权限即可正常使用。
 
+### macOS / Linux
+
+首次使用：
+
+```bash
+chmod +x ./sync.sh
+```
+
+同步：
+
+```bash
+./sync.sh "更新笔记"
+```
+
+不传消息将使用时间戳作为默认提交信息：
+
+```bash
+./sync.sh
+```
+
 ## GitHub Pages 展示 PDFs 目录与清单
 
 已在 `docs/` 目录下添加静态站点：
@@ -75,6 +95,5 @@ git rebase --abort
 1. 打开仓库 Settings → Pages。
 2. Source 选择 `Deploy from a branch`。
 3. Branch 选择 `main`，目录选择 `/docs`，保存。
-4. 稍等片刻，访问仓库 Pages 地址（通常为 `https://<用户名>.github.io/YRL-s-Library/`）。
 
 注意：页面脚本默认使用配置 `owner=yangruoliu`、`repo=YRL-s-Library`、`branch=main` 读取内容；如改名或使用 Fork，可编辑 `docs/index.html` 与 `docs/folder.html` 顶部的 `window.SITE_CONFIG`。
