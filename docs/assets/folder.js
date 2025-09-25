@@ -57,7 +57,7 @@
     items.forEach((it, idx)=>{
       const tr = document.createElement('tr');
       const pdfHref = it.pdf || it.file || it.filename;
-      const pdfUrl = pdfHref ? toRawOrRepoPath(pdfHref) : '';
+      const pdfUrl = pdfHref ? toFileUrl(pdfHref) : '';
       tr.innerHTML = `
         <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
         <td>${escapeHtml(it.year)}</td>
@@ -71,9 +71,15 @@
     tbody.appendChild(frag);
   }
 
-  function toRawOrRepoPath(href){
+  function toFileUrl(href){
+    // absolute links remain as-is
     if(/^https?:\/\//i.test(href)) return href;
-    return `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/PDFs/${encodeURIComponent(name)}/${encodeURIComponent(href)}`;
+    const mode = (window.SITE_CONFIG && window.SITE_CONFIG.linkMode) || 'repo';
+    if(mode === 'raw'){
+      return `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/PDFs/${encodeURIComponent(name)}/${encodeURIComponent(href)}`;
+    }
+    // default repo (blob) view
+    return `https://github.com/${owner}/${repo}/blob/${encodeURIComponent(branch)}/PDFs/${encodeURIComponent(name)}/${encodeURIComponent(href)}`;
   }
   function escapeHtml(v){ if(v===0) return '0'; if(!v && v!==0) return ''; return String(v).replace(/[&<>"']/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[s])); }
   function linkOrText(text, href){ if(!href) return escapeHtml(text||''); return `<a href="${href}" target="_blank" rel="noopener">${escapeHtml(text||href)}</a>`; }
