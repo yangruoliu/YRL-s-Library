@@ -1,5 +1,86 @@
 [
   {
+    "title": "MMSearch-R1: Incentivizing LMMs to Search",
+    "filename": "2506.20670v1.pdf",
+    "year": 2025.6,
+    "affiliations": ["ByteDance","S-Lab, NTU"],
+    "github_repo": "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1",
+    "arxiv": "https://arxiv.org/abs/2506.20670"
+  },
+  {
+    "title": "VITA-Audio: Fast Interleaved Cross-Modal Token Generation for Efficient Large Speech-Language Model",
+    "filename": "2505.03739v1.pdf",
+    "year": 2025.5,
+    "affiliations": ["Tencent Youtu Lab"],
+    "github_repo": "https://github.com/VITA-MLLM/VITA-Audio",
+    "arxiv": "https://arxiv.org/abs/2505.03739"
+  },
+  {
+    "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models",
+    "filename": "2505.04921v2.pdf",
+    "year": 2025.5,
+    "affiliations": ["Harbin Institute of Technology, Shenzhen"],
+    "github_repo": "https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models",
+    "arxiv": "https://arxiv.org/abs/2505.04921",
+    "remark": "综述"
+  },
+  {
+    "title": "BLIP3-o: A Family of Fully Open Unified Multimodal Models—Architecture, Training and Dataset",
+    "filename": "2505.09568v1.pdf",
+    "year": 2025.5,
+    "affiliations": ["Salesforce Research"],
+    "github_repo": "https://github.com/JiuhaiChen/BLIP3o",
+    "arxiv": "https://arxiv.org/abs/2505.09568"
+  },
+  {
+    "title": "UniGen: Enhanced Training&Test-Time Strategies for Unified Multimodal Understanding and Generation",
+    "filename": "2505.14682v1.pdf",
+    "year": 2025.5,
+    "affiliations": ["Apple"],
+    "arxiv": "https://arxiv.org/abs/2505.14682"
+  },
+  {
+    "title": "MMaDA: Multimodal Large Diffusion Language Models",
+    "filename": "2505.15809v1.pdf",
+    "year": 2025.5,
+    "affiliations": ["Princeton University"],
+    "github_repo": "https://github.com/Gen-Verse/MMaDA",
+    "arxiv": "https://arxiv.org/abs/2505.15809",
+    "remark": "ByteDance Seed"
+  },
+  {
+    "title": "Emerging Properties in Unified Multimodal Pretraining",
+    "filename": "2505.14683v3.pdf",
+    "year": 2025.5,
+    "affiliations": ["ByteDance Seed","Shenzhen Institutes of Advanced Technology"],
+    "github_repo": "https://bagel-ai.org/",
+    "arxiv": "https://arxiv.org/abs/2505.14683",
+    "remark": "Bagel-AI"
+  },
+  {
+    "title": "InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models",
+    "filename": "2504.10479v4.pdf",
+    "year": 2025.4,
+    "affiliations": ["Shanghai AI Laboratory "],
+    "github_repo": "https://github.com/OpenGVLab/InternVL",
+    "arxiv": "https://arxiv.org/abs/2504.10479"
+  },
+  {
+    "title": "Skywork R1V2: Multimodal Hybrid Reinforcement Learning for Reasoning",
+    "filename": "2504.16656v4.pdf",
+    "year": 2025.4,
+    "affiliations": ["Skywork AI"],
+    "github_repo": "https://github.com/SkyworkAI/Skywork-R1V",
+    "arxiv": "https://arxiv.org/abs/2504.16656"
+  },
+  {
+    "title": "Qwen2.5-Omni Technical Report",
+    "filename": "Qwen2.5_Omni.pdf",
+    "year": 2025.3,
+    "affiliations": ["Qwen Team"],
+    "github_repo": "https://github.com/QwenLM/Qwen2.5-Omni"
+  },
+  {
     "title": "NEXUS: AN OMNI-PERCEPTIVE AND-INTERACTIVE MODEL FOR LANGUAGE, AUDIO, AND VISION",
     "filename": "2503.01879v3.pdf",
     "year": 2025.3,
