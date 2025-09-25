@@ -22,7 +22,9 @@
     if(res.status === 404){ setMessage('未找到 meta.json，请在该子目录添加 meta.json。'); return; }
     if(!res.ok){ throw new Error(`加载 meta.json 失败: ${res.status}`); }
     const data = await res.json();
-    const rows = Array.isArray(data) ? data : (data.items || []);
+    let rows = Array.isArray(data) ? data : (data.items || []);
+    // Defensive: filter out falsy or non-object entries
+    rows = rows.filter(x => x && typeof x === 'object');
     if(!rows.length){ setMessage('当前目录暂无条目。'); return; }
     clearMessage();
     render(rows);
@@ -55,25 +57,30 @@
     }
     const frag = document.createDocumentFragment();
     items.forEach((it, idx)=>{
-      const tr = document.createElement('tr');
-      const pdfHref = it.pdf || it.file || it.filename;
-      const pdfUrl = pdfHref ? toFileUrl(pdfHref) : '';
-      const ghUrl = it.github_repo || it.github || '';
-      const arxivUrl = it.arxiv || it.arxiv_url || '';
-      const dataUrl = it.data || it.data_url || it.dataset || it.dataset_url || guessDatasetFromGithub(ghUrl) || '';
-      const remark = it.remark || it.note || it.comment || '';
-      tr.innerHTML = `
-        <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
-        <td>${escapeHtml(it.year)}</td>
-        <td>${escapeHtml(it.venue || it.journal || it.conference)}</td>
-        <td>${results[idx] || ''}</td>
-        <td>${ghUrl ? `<a href="${escapeAttr(ghUrl)}" target="_blank" rel="noopener">GitHub</a>` : ''}</td>
-        <td>${arxivUrl ? `<a href="${escapeAttr(arxivUrl)}" target="_blank" rel="noopener">arXiv</a>` : ''}</td>
-        <td>${dataUrl ? `<a href="${escapeAttr(dataUrl)}" target="_blank" rel="noopener">数据</a>` : ''}</td>
-        <td>${joinTags(it.affiliations || it.orgs || it.companies)}</td>
-        <td>${escapeHtml(remark)}</td>
-      `;
-      frag.appendChild(tr);
+      try {
+        const tr = document.createElement('tr');
+        const pdfHrefRaw = it.pdf || it.file || it.filename;
+        const pdfHref = typeof pdfHrefRaw === 'string' ? pdfHrefRaw.trim() : pdfHrefRaw;
+        const pdfUrl = pdfHref ? toFileUrl(pdfHref) : '';
+        const ghRaw = it.github_repo || it.github || '';
+        const ghUrl = typeof ghRaw === 'string' ? ghRaw.trim() : ghRaw;
+        const axRaw = it.arxiv || it.arxiv_url || '';
+        const arxivUrl = typeof axRaw === 'string' ? axRaw.trim() : axRaw;
+        const remark = it.remark || it.note || it.comment || '';
+        tr.innerHTML = `
+          <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
+          <td>${escapeHtml(it.year)}</td>
+          <td>${escapeHtml(it.venue || it.journal || it.conference)}</td>
+          <td>${results[idx] || ''}</td>
+          <td>${ghUrl ? `<a href="${escapeAttr(ghUrl)}" target="_blank" rel="noopener">GitHub</a>` : ''}</td>
+          <td>${arxivUrl ? `<a href="${escapeAttr(arxivUrl)}" target="_blank" rel="noopener">arXiv</a>` : ''}</td>
+          <td>${joinTags(it.affiliations || it.orgs || it.companies)}</td>
+          <td>${escapeHtml(remark)}</td>
+        `;
+        frag.appendChild(tr);
+      } catch (e) {
+        console.error('渲染条目失败', { index: idx, item: it, error: e });
+      }
     });
     tbody.appendChild(frag);
   }
@@ -95,12 +102,6 @@
     if(!list) return '';
     const arr = Array.isArray(list) ? list : String(list).split(/[,;、]/).map(s=>s.trim()).filter(Boolean);
     return arr.map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('');
-  }
-  function guessDatasetFromGithub(url){
-    if(!url) return '';
-    if(/github\.com/i.test(url)) return '';
-    // treat non-GitHub urls in github_repo as dataset links (e.g., huggingface)
-    return url;
   }
 })();
 

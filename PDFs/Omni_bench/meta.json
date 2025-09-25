@@ -1,36 +1,21 @@
 [
   {
-    "title": "From Specific-MLLMs to Omni-MLLMs:A Survey on MLLMs Aligned with Multi-modalities",
-    "filename": "2412.11694v3.pdf",
-    "year": 2024.12,
-    "affiliations": ["Harbin Institute of Technology, Harbin, China"],
-    "arxiv": "https://arxiv.org/abs/2412.11694",
-    "github_repo":"https://github.com/threegold116/AwesomeOmni-MLLMs",
-    "remark":"综述"
+    "title": "VGGSounder: Audio-Visual Evaluations for Foundation Models",
+    "filename": "2508.08237v2.pdf",
+    "year": 2025.8,
+    "venue":"ICCV 2025",
+    "affiliations": ["Technical University of Munich, MCML"],
+    "arxiv": "https://arxiv.org/abs/2508.08237",
+    "github_repo":"https://vggsounder.github.io/"
   },
   {
-    "title": "LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos",
-    "filename": "Geng_LongVALE_Vision-Audio-Language-Event_Benc.pdf",
-    "year": 2024.11,
-    "venue":"CVPR 2025",
-    "affiliations": ["Southern University of Science and Technology"],
-    "arxiv": "https://arxiv.org/abs/2411.19772",
-    "github_repo":"https://ttgeng233.github.io/LongVALE/"
-  },
-  {
-    "title": "Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark",
-    "filename": "3696410.3714739.pdf",
-    "year": 2025.4,
-    "venue":"WWW 2025",
-    "affiliations": ["School of Electronic Engineering, Xidian University"],
-    "arxiv": "https://doi.org/10.1145/3696410.3714739"
-  },
-  {
-    "title": "Omni R: Evaluating Omni-modality Language Models on Reasoning across Modalities",
-    "filename": "2410.12219v1.pdf",
-    "year": 2024.10,
-    "affiliations": ["Google DeepMind"],
-    "arxiv": "https://arxiv.org/abs/2410.12219"
+    "title": "ELV-Halluc: Benchmarking Semantic Aggregation Hallucinations in Long Video Understanding",
+    "filename": "2508.21496v2.pdf",
+    "year": 2025.8,
+    "affiliations": ["SenseTime Research"],
+    "arxiv": "https://arxiv.org/abs/2508.21496",
+    "github_repo":"https://github.com/hlsv02/ELV-Halluc",
+    "remark":"长视频幻觉"
   },
   {
     "title": "OMNI-SAFETYBENCH: A BENCHMARK FOR SAFETY EVALUATION OF AUDIO-VISUAL LARGE LANGUAGE MODELS",
@@ -40,6 +25,57 @@
     "arxiv": "https://arxiv.org/abs/2508.07173",
     "github_repo":"https://github.com/THU-BPM/Omni-SafetyBench",
     "dataset":"https://huggingface.co/datasets/Leyiii/Omni-SafetyBench"
+  },
+  {
+    "title": "What’s Making That Sound Right Now? Video-centric Audio-Visual Localization",
+    "filename": "2507.04667v2.pdf",
+    "year": 2025.7,
+    "venue":"ICCV 2025",
+    "affiliations": ["Seoul National University"],
+    "arxiv": "https://arxiv.org/abs/2507.04667",
+    "github_repo":"https://hahyeon610.github.io/Video-centric_Audio_Visual_Localization/",
+    "remark":"Audio-Visual Localization"
+  },
+  {
+    "title": "AnyCap Project: A Unified Framework, Dataset, and Benchmark for Controllable Omni-modal Captioning",
+    "filename": "2507.12841v1.pdf",
+    "year": 2025.7,
+    "affiliations": ["Tsinghua University"],
+    "arxiv": "https://arxiv.org/abs/2507.12841",
+    "github_repo":"https://github.com/qishisuren123/AnyCap"
+  },
+  {
+    "title": "HumanOmniV2: From Understanding to Omni-Modal Reasoning with Context",
+    "filename": "2506.21277v1.pdf",
+    "year": 2025.6,
+    "affiliations": ["Tongyi Lab"],
+    "arxiv": "https://arxiv.org/abs/2506.21277v1",
+    "github_repo":"https://github.com/HumanMLLM/HumanOmniV2",
+    "remark":"Intent Bench"
+  },
+  {
+    "title": "OmniEval: A Benchmark for Evaluating Omni-modal Models with Visual, Auditory, and Textual Inputs",
+    "filename": "2506.20960v2.pdf",
+    "year": 2025.6,
+    "affiliations": ["Huawei Noah’s Ark Lab"],
+    "arxiv": "https://arxiv.org/abs/2506.20960",
+    "github_repo":"https://omnieval-benchmark.github.io/"
+  },
+  {
+    "title": "Daily-Omni: Towards Audio-Visual Reasoning with Temporal Alignment across Modalities",
+    "filename": "2505.17862v1.pdf",
+    "year": 2025.5,
+    "affiliations": ["Fudan University"],
+    "arxiv": "https://arxiv.org/abs/2505.17862",
+    "github_repo":"https://github.com/Lliar-liar/Daily-Omni"
+  },
+  {
+    "title": "From Rankings to Insights: Evaluation Should Shift Focus from Leaderboard to Feedback",
+    "filename": "2505.06698v2.pdf",
+    "year": 2025.5,
+    "affiliations": ["Tsinghua Shenzhen International Graduate School, Tsinghua University"],
+    "arxiv": "https://arxiv.org/abs/2505.06698",
+    "github_repo":"https://liudan193.github.io/Feedbacker/"
   },
   {
     "title": "On Path to Multimodal Generalist: General-Level and General-Bench",
@@ -52,6 +88,14 @@
     "remark":"不同模态分开测的"
   },
   {
+    "title": "Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark",
+    "filename": "3696410.3714739.pdf",
+    "year": 2025.4,
+    "venue":"WWW 2025",
+    "affiliations": ["School of Electronic Engineering, Xidian University"],
+    "arxiv": "https://doi.org/10.1145/3696410.3714739"
+  },
+  {
     "title": "Toward Generalizable Evaluation in the LLM Era: A Survey Beyond Benchmarks",
     "filename": "2504.18838v1.pdf",
     "year": 2025.4,
@@ -59,17 +103,126 @@
     "arxiv": "https://arxiv.org/abs/2504.18838"
   },
   {
+    "title": "4D-Bench: Benchmarking Multi-modal Large Language Models for 4D Object Understanding",
+    "filename": "2503.17827v1.pdf",
+    "year": 2025.3,
+    "affiliations": ["King Abdullah University of Science and Technology"],
+    "arxiv": "https://arxiv.org/abs/2503.17827",
+    "github_repo":"https://4dbench.github.io/"
+  },
+  {
+    "title": "OmniMMI: A Comprehensive Multi-modal Interaction Benchmark in Streaming Video Contexts",
+    "filename": "2503.22952v1.pdf",
+    "year": 2025.3,
+    "venue":"CVPR 2025",
+    "affiliations": ["Beijing Institute for General Artificial Intelligence"],
+    "arxiv": "https://arxiv.org/abs/2503.22952",
+    "github_repo":"https://omnimmi.github.io"
+  },
+  {
+    "title": "WorldSense: Evaluating Real-world Omnimodal Understanding for Multimodal LLMs",
+    "filename": "2502.04326v2.pdf",
+    "year": 2025.2,
+    "affiliations": ["Xiaohongshu Inc."],
+    "arxiv": "https://arxiv.org/abs/2502.04326",
+    "github_repo":"https://jaaackhongggg.github.io/WorldSense"
+  },
+  {
     "title": "TemporalVQA: Can Multimodal LLMs do Visual Temporal Understanding and Reasoning? The answer is No!",
     "filename": "2501.10674v2.pdf",
     "year": 2025.1,
     "affiliations": ["Mohamed bin Zayed University of Artificial Intelligence"],
-    "dataset": "https://huggingface.co/ datasets/fazliimam/temporal-vqa",
     "arxiv": "https://arxiv.org/abs/2501.10674"
+  },
+  {
+    "title": "AV-Odyssey Bench: Can Your Multimodal LLMs Really Understand Audio-Visual Information?",
+    "filename": "2412.02611v1.pdf",
+    "year": 2024.12,
+    "affiliations": ["CUHK MMLab"],
+    "arxiv": "https://arxiv.org/abs/2412.02611",
+    "github_repo":"https://av-odyssey.github.io/"
+  },
+  {
+    "title": "From Specific-MLLMs to Omni-MLLMs:A Survey on MLLMs Aligned with Multi-modalities",
+    "filename": "2412.11694v3.pdf",
+    "year": 2024.12,
+    "affiliations": ["Harbin Institute of Technology, Harbin, China"],
+    "arxiv": "https://arxiv.org/abs/2412.11694",
+    "github_repo":"https://github.com/threegold116/AwesomeOmni-MLLMs",
+    "remark":"综述"
+  },
+  {
+    "title": "STREAMINGBENCH: ASSESSING THE GAP FOR MLLMS TO ACHIEVE STREAMING VIDEO UNDERSTANDING",
+    "filename": "2411.03628v1.pdf",
+    "year": 2024.11,
+    "affiliations": ["Dept. of Comp. Sci. & Tech., Institute for AI, Tsinghua University"],
+    "arxiv": "https://arxiv.org/abs/2411.03628",
+    "github_repo":"https://github.com/Lliar-liar/Daily-Omni"
+  },
+  {
+    "title": "LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos",
+    "filename": "Geng_LongVALE_Vision-Audio-Language-Event_Benc.pdf",
+    "year": 2024.11,
+    "venue":"CVPR 2025",
+    "affiliations": ["Southern University of Science and Technology"],
+    "arxiv": "https://arxiv.org/abs/2411.19772",
+    "github_repo":"https://ttgeng233.github.io/LongVALE/"
+  },
+  {
+    "title": "Omni R: Evaluating Omni-modality Language Models on Reasoning across Modalities",
+    "filename": "2410.12219v1.pdf",
+    "year": 2024.10,
+    "affiliations": ["Google DeepMind"],
+    "arxiv": "https://arxiv.org/abs/2410.12219"
+  }, 
+  {
+    "title": "OmniBench: Towards The Future of Universal Omni-Language Models",
+    "filename": "2409.15272v4.pdf",
+    "year": 2024.9,
+    "affiliations": ["M-A-P","University of Manchester"],
+    "arxiv": "https://arxiv.org/abs/2409.15272",
+    "github_repo":"https://github.com/multimodal-art-projection/OmniBench"
+  },
+  {
+    "title": "A Survey on Benchmarks of Multimodal Large Language Models",
+    "filename": "2408.08632v2.pdf",
+    "year": 2024.8,
+    "affiliations": ["Tencent"],
+    "arxiv": "https://arxiv.org/abs/2408.08632",
+    "github_repo":"https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey",
+    "remark":"综述"
+  },
+  {
+    "title": "MIA-BENCH: TOWARDS BETTER INSTRUCTION FOLLOWING EVALUATION OF MULTIMODAL LLMS",
+    "filename": "2407.01509v5.pdf",
+    "year": 2024.7,
+    "venue":"ICLR 2025",
+    "affiliations": ["Apple"],
+    "arxiv": "https://arxiv.org/abs/2407.01509",
+    "github_repo":"https://github.com/apple/ml-mia-bench"
+  },
+  {
+    "title": "MMT-Bench: A Comprehensive Multimodal Benchmark for Evaluating Large Vision-Language Models Towards Multitask AGI",
+    "filename": "2404.16006v1.pdf",
+    "year": 2024.4,
+    "venue":"ICML 2024",
+    "affiliations": ["School of Electronic Engineering, Xidian University"],
+    "arxiv": "https://arxiv.org/abs/2404.16006",
+    "github_repo":"https://github.com/OpenGVLab/MMT-Bench"
+  },
+  {
+    "title": "Model Composition for Multimodal Large Language Models",
+    "filename": "2402.12750v2.pdf",
+    "year": 2024.2,
+    "affiliations": ["Dept. of Comp. Sci. & Tech., Institute for AI, Tsinghua University"],
+    "arxiv": "https://arxiv.org/abs/2402.12750",
+    "github_repo":"https://github.com/THUNLP-MT/ModelCompose",
+    "remark":"MCUB"
   },
   {
     "title": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
     "filename": "NeurIPS-2024-naturalbench-evaluating-vision-la.pdf",
-    "year": 2024,
+    "year": 2024.0,
     "venue": "NeurIPS 2024",
     "affiliations": ["Carnegie Mellon University"],
     "github_repo": "https://linzhiqiu.github.io/papers/naturalbench"
@@ -77,12 +230,20 @@
   {
     "title": "Learning to Answer Questions in Dynamic Audio-Visual Scenarios",
     "filename": "Li_Learning_To_Answer_Questions_in_Dynamic_Aud.pdf",
-    "year": 2022,
+    "year": 2022.0,
     "venue":"CVPR 2022",
     "affiliations": ["Gaoling School of Artificial Intelligence, Renmin University of China"],
     "arxiv": "https://arxiv.org/abs/2203.14072",
     "github_repo":"http://gewulab.github.io/MUSIC-AVQA/",
     "remark":"Music AVQA"
+  }, 
+  {
+    "title": "AVQA: A Dataset for Audio-Visual Question Answering on Videos",
+    "filename": "3503161.3548291.pdf",
+    "year": 2022.0,
+    "venue":"ACM 2022",
+    "affiliations": ["Tsinghua University"],
+    "github_repo":"https://github.com/AlyssaYoung/AVQA"
   }
 ]
 
