@@ -47,15 +47,8 @@
 
   async function render(items){
     tableWrap.hidden = false;
-    // resolve stars concurrently but limit concurrency for performance (simple batch)
-    const batched = [];
-    const batchSize = 8;
-    for(let i=0;i<items.length;i+=batchSize){ batched.push(items.slice(i,i+batchSize)); }
+    // Stars column removed
     const results = [];
-    for(const group of batched){
-      const stars = await Promise.all(group.map(x=>getRepoStars(x.github_repo)));
-      results.push(...stars);
-    }
     const frag = document.createDocumentFragment();
     items.forEach((it, idx)=>{
       try {
@@ -72,7 +65,6 @@
           <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
           <td>${escapeHtml(it.year)}</td>
           <td>${escapeHtml(it.venue || it.journal || it.conference)}</td>
-          <td>${results[idx] || ''}</td>
           <td>${ghUrl ? `<a href="${escapeAttr(ghUrl)}" target="_blank" rel="noopener">GitHub</a>` : ''}</td>
           <td>${arxivUrl ? `<a href="${escapeAttr(arxivUrl)}" target="_blank" rel="noopener">arXiv</a>` : ''}</td>
           <td>${joinTags(it.affiliations || it.orgs || it.companies)}</td>
@@ -117,6 +109,7 @@
     if(mm){ return parseFloat(`${mm[1]}.${(mm[2]||'0').substring(0,2)}`); }
     return 0;
   }
+
 })();
 
 
