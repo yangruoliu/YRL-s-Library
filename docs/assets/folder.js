@@ -23,8 +23,9 @@
     if(!res.ok){ throw new Error(`加载 meta.json 失败: ${res.status}`); }
     const data = await res.json();
     let rows = Array.isArray(data) ? data : (data.items || []);
-    // Defensive: filter out falsy or non-object entries
+    // Defensive: filter out falsy or non-object entries, then sort by time (newest first)
     rows = rows.filter(x => x && typeof x === 'object');
+    rows.sort((a,b)=> timeValue(b) - timeValue(a));
     if(!rows.length){ setMessage('当前目录暂无条目。'); return; }
     clearMessage();
     render(rows);
@@ -102,6 +103,19 @@
     if(!list) return '';
     const arr = Array.isArray(list) ? list : String(list).split(/[,;、]/).map(s=>s.trim()).filter(Boolean);
     return arr.map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('');
+  }
+
+  function timeValue(it){
+    const y = it && it.year;
+    if(typeof y === 'number') return y;
+    if(typeof y === 'string'){
+      const m = y.match(/[0-9]+(?:\.[0-9]+)?/);
+      if(m) return parseFloat(m[0]);
+    }
+    const ax = (it && (it.arxiv || it.arxiv_url || '')) + '';
+    const mm = ax.match(/([0-9]{4})\.([0-9]{4,5})/);
+    if(mm){ return parseFloat(`${mm[1]}.${(mm[2]||'0').substring(0,2)}`); }
+    return 0;
   }
 })();
 
