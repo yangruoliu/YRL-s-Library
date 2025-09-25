@@ -1,21 +1,88 @@
 [
   {
-    "title": "Attention Is All You Need",
-    "filename": "attention-is-all-you-need.pdf",
-    "year": 2017,
-    "venue": "NeurIPS",
-    "authors": ["Ashish Vaswani", "Noam Shazeer", "Niki Parmar", "Jakob Uszkoreit", "Llion Jones", "Aidan N. Gomez", "Łukasz Kaiser", "Illia Polosukhin"],
-    "affiliations": ["Google"],
-    "github_repo": "https://github.com/tensorflow/tensor2tensor"
+    "title": "From Specific-MLLMs to Omni-MLLMs:A Survey on MLLMs Aligned with Multi-modalities",
+    "filename": "2412.11694v3.pdf",
+    "year": 2024.12,
+    "affiliations": ["Harbin Institute of Technology, Harbin, China"],
+    "arxiv": "https://arxiv.org/abs/2412.11694",
+    "github_repo":"https://github.com/threegold116/AwesomeOmni-MLLMs",
+    "remark":"综述"
   },
   {
-    "title": "Masked Autoencoders Are Scalable Vision Learners",
-    "filename": "mae.pdf",
-    "year": 2021,
-    "venue": "CVPR",
-    "authors": ["Kaiming He", "Xinlei Chen", "Saining Xie", "Yanghao Li", "Piotr Dollár", "Ross Girshick"],
-    "affiliations": ["Meta AI"],
-    "github_repo": "https://github.com/facebookresearch/mae"
+    "title": "LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos",
+    "filename": "Geng_LongVALE_Vision-Audio-Language-Event_Benc.pdf",
+    "year": 2024.11,
+    "venue":"CVPR 2025",
+    "affiliations": ["Southern University of Science and Technology"],
+    "arxiv": "https://arxiv.org/abs/2411.19772",
+    "github_repo":"https://ttgeng233.github.io/LongVALE/"
+  },
+  {
+    "title": "Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark",
+    "filename": "3696410.3714739.pdf",
+    "year": 2025.4,
+    "venue":"WWW 2025",
+    "affiliations": ["School of Electronic Engineering, Xidian University"],
+    "arxiv": "https://doi.org/10.1145/3696410.3714739"
+  },
+  {
+    "title": "Omni R: Evaluating Omni-modality Language Models on Reasoning across Modalities",
+    "filename": "2410.12219v1.pdf",
+    "year": 2024.10,
+    "affiliations": ["Google DeepMind"],
+    "arxiv": "https://arxiv.org/abs/2410.12219"
+  },
+  {
+    "title": "OMNI-SAFETYBENCH: A BENCHMARK FOR SAFETY EVALUATION OF AUDIO-VISUAL LARGE LANGUAGE MODELS",
+    "filename": "2508.07173v1.pdf",
+    "year": 2025.8,
+    "affiliations": ["Tsinghua University"],
+    "arxiv": "https://arxiv.org/abs/2508.07173",
+    "github_repo":"https://github.com/THU-BPM/Omni-SafetyBench",
+    "dataset":"https://huggingface.co/datasets/Leyiii/Omni-SafetyBench"
+  },
+  {
+    "title": "On Path to Multimodal Generalist: General-Level and General-Bench",
+    "filename": "2912_On_Path_to_Multimodal_Gen.pdf",
+    "venue": "ICML 2025",
+    "year": 2025.5,
+    "affiliations": ["NUS"],
+    "arxiv": "https://arxiv.org/abs/2505.04620",
+    "dataset":"https://huggingface.co/ General-Level/",
+    "remark":"不同模态分开测的"
+  },
+  {
+    "title": "Toward Generalizable Evaluation in the LLM Era: A Survey Beyond Benchmarks",
+    "filename": "2504.18838v1.pdf",
+    "year": 2025.4,
+    "affiliations": ["Fudan University"],
+    "arxiv": "https://arxiv.org/abs/2504.18838"
+  },
+  {
+    "title": "TemporalVQA: Can Multimodal LLMs do Visual Temporal Understanding and Reasoning? The answer is No!",
+    "filename": "2501.10674v2.pdf",
+    "year": 2025.1,
+    "affiliations": ["Mohamed bin Zayed University of Artificial Intelligence"],
+    "dataset": "https://huggingface.co/ datasets/fazliimam/temporal-vqa",
+    "arxiv": "https://arxiv.org/abs/2501.10674"
+  },
+  {
+    "title": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "filename": "NeurIPS-2024-naturalbench-evaluating-vision-la.pdf",
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "affiliations": ["Carnegie Mellon University"],
+    "github_repo": "https://linzhiqiu.github.io/papers/naturalbench"
+  },
+  {
+    "title": "Learning to Answer Questions in Dynamic Audio-Visual Scenarios",
+    "filename": "Li_Learning_To_Answer_Questions_in_Dynamic_Aud.pdf",
+    "year": 2022,
+    "venue":"CVPR 2022",
+    "affiliations": ["Gaoling School of Artificial Intelligence, Renmin University of China"],
+    "arxiv": "https://arxiv.org/abs/2203.14072",
+    "github_repo":"http://gewulab.github.io/MUSIC-AVQA/",
+    "remark":"Music AVQA"
   }
 ]
 

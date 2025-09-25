@@ -38,5 +38,6 @@ meta.json 示例：
 - `github_repo`：对应的 GitHub 仓库地址（用于获取 star 数）
 - `arxiv`：对应的 arXiv 页面链接（如 `https://arxiv.org/abs/1706.03762`）
 - `remark`：备注文字（也支持同义字段 `note`/`comment`）
+- `data`：数据集链接（同义字段 `data_url`/`dataset`/`dataset_url`）。若你把非 GitHub 链接误填在 `github_repo` 中，页面也会将其作为“数据”链接展示。
 
 

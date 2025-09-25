@@ -60,6 +60,7 @@
       const pdfUrl = pdfHref ? toFileUrl(pdfHref) : '';
       const ghUrl = it.github_repo || it.github || '';
       const arxivUrl = it.arxiv || it.arxiv_url || '';
+      const dataUrl = it.data || it.data_url || it.dataset || it.dataset_url || guessDatasetFromGithub(ghUrl) || '';
       const remark = it.remark || it.note || it.comment || '';
       tr.innerHTML = `
         <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
@@ -68,6 +69,7 @@
         <td>${results[idx] || ''}</td>
         <td>${ghUrl ? `<a href="${escapeAttr(ghUrl)}" target="_blank" rel="noopener">GitHub</a>` : ''}</td>
         <td>${arxivUrl ? `<a href="${escapeAttr(arxivUrl)}" target="_blank" rel="noopener">arXiv</a>` : ''}</td>
+        <td>${dataUrl ? `<a href="${escapeAttr(dataUrl)}" target="_blank" rel="noopener">数据</a>` : ''}</td>
         <td>${joinTags(it.affiliations || it.orgs || it.companies)}</td>
         <td>${escapeHtml(remark)}</td>
       `;
@@ -93,6 +95,12 @@
     if(!list) return '';
     const arr = Array.isArray(list) ? list : String(list).split(/[,;、]/).map(s=>s.trim()).filter(Boolean);
     return arr.map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('');
+  }
+  function guessDatasetFromGithub(url){
+    if(!url) return '';
+    if(/github\.com/i.test(url)) return '';
+    // treat non-GitHub urls in github_repo as dataset links (e.g., huggingface)
+    return url;
   }
 })();
 
