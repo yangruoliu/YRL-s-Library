@@ -1,21 +1,11 @@
 [
   {
-    "title": "Attention Is All You Need",
-    "filename": "attention-is-all-you-need.pdf",
-    "year": 2017,
-    "venue": "NeurIPS",
-    "authors": ["Ashish Vaswani", "Noam Shazeer", "Niki Parmar", "Jakob Uszkoreit", "Llion Jones", "Aidan N. Gomez", "Łukasz Kaiser", "Illia Polosukhin"],
-    "affiliations": ["Google"],
-    "github_repo": "https://github.com/tensorflow/tensor2tensor"
-  },
-  {
-    "title": "Masked Autoencoders Are Scalable Vision Learners",
-    "filename": "mae.pdf",
-    "year": 2021,
-    "venue": "CVPR",
-    "authors": ["Kaiming He", "Xinlei Chen", "Saining Xie", "Yanghao Li", "Piotr Dollár", "Ross Girshick"],
-    "affiliations": ["Meta AI"],
-    "github_repo": "https://github.com/facebookresearch/mae"
+    "title": "InternVL2.5--Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
+    "filename": "2412.05271v4.pdf",
+    "year": 2024,
+    "venue": "arXiv 2412.05271",
+    "affiliations": ["Shanghai AI Laboratory"],
+    "github_repo": "https://github.com/OpenGVLab/InternVL"
   }
 ]
 
