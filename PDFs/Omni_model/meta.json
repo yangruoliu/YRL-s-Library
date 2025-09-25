@@ -1,11 +1,45 @@
 [
   {
+    "title": "NEXUS: AN OMNI-PERCEPTIVE AND-INTERACTIVE MODEL FOR LANGUAGE, AUDIO, AND VISION",
+    "filename": "2503.01879v3.pdf",
+    "year": 2025.3,
+    "affiliations": ["HiThink Research"],
+    "github_repo": "https://hithink-ai.github.io/Nexus-O/",
+    "arxiv": "https://arxiv.org/abs/2503.01879"
+  },
+  {
+    "title": "Long-VITA: Scaling Large Multi-modal Models to 1 Million Tokens with Leading Short-Context Accuracy",
+    "filename": "2502.05177v2.pdf",
+    "year": 2025.2,
+    "affiliations": ["Tencent Youtu Lab"],
+    "github_repo": "https://github.com/VITA-MLLM/Long-VITA",
+    "arxiv": "https://arxiv.org/abs/2502.05177"
+  },
+  {
+    "title": "LlamaV-o1: Rethinking Step-by-step Visual Reasoning in LLMs",
+    "filename": "2501.06186v1.pdf",
+    "year": 2025.1,
+    "venue": "ACL2025",
+    "affiliations": ["Mohamed bin Zayed University of AI"],
+    "github_repo": "https://github.com/mbzuai-oryx/LlamaV-o1",
+    "arxiv": "https://arxiv.org/abs/2501.06186"
+  },
+  {
     "title": "InternVL2.5--Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
     "filename": "2412.05271v4.pdf",
-    "year": 2024,
+    "year": 2024.12,
+    "venue": "CVPR2024",
     "affiliations": ["Shanghai AI Laboratory"],
     "github_repo": "https://github.com/OpenGVLab/InternVL",
     "arxiv": "https://arxiv.org/abs/2412.05271"
+  },
+  {
+    "title": "Apollo: An Exploration of Video Understanding in Large Multimodal Models",
+    "filename": "2412.10360v1.pdf",
+    "year": 2024.12,
+    "affiliations": ["Meta"],
+    "github_repo": "https://apollo-lmms.github.io",
+    "arxiv": "https://arxiv.org/abs/2412.10360"
   }
 ]
 

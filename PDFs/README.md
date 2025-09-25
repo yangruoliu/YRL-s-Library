@@ -37,5 +37,6 @@ meta.json 示例：
 - `affiliations`：单位/公司数组（也支持 `orgs`/`companies` 字段）
 - `github_repo`：对应的 GitHub 仓库地址（用于获取 star 数）
 - `arxiv`：对应的 arXiv 页面链接（如 `https://arxiv.org/abs/1706.03762`）
+- `remark`：备注文字（也支持同义字段 `note`/`comment`）
 
 

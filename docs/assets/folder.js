@@ -60,6 +60,7 @@
       const pdfUrl = pdfHref ? toFileUrl(pdfHref) : '';
       const ghUrl = it.github_repo || it.github || '';
       const arxivUrl = it.arxiv || it.arxiv_url || '';
+      const remark = it.remark || it.note || it.comment || '';
       tr.innerHTML = `
         <td>${linkOrText(it.title || it.name || pdfHref, pdfUrl)}</td>
         <td>${escapeHtml(it.year)}</td>
@@ -68,6 +69,7 @@
         <td>${ghUrl ? `<a href="${escapeAttr(ghUrl)}" target="_blank" rel="noopener">GitHub</a>` : ''}</td>
         <td>${arxivUrl ? `<a href="${escapeAttr(arxivUrl)}" target="_blank" rel="noopener">arXiv</a>` : ''}</td>
         <td>${joinTags(it.affiliations || it.orgs || it.companies)}</td>
+        <td>${escapeHtml(remark)}</td>
       `;
       frag.appendChild(tr);
     });
