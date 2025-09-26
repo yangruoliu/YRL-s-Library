@@ -1,5 +1,12 @@
 [
   {
+    "title": "Qwen3_Omni",
+    "filename": "Qwen3_Omni.pdf",
+    "year": 2025.9,
+    "affiliations": ["Qwen Team"],
+    "github_repo": "https://github.com/QwenLM/Qwen3-Omni"
+  },
+  {
     "title": "Thyme: Think Beyond Images",
     "filename": "Thyme-Think_Beyond_Images.pdf",
     "year": 2025.8,
